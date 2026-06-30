@@ -1,0 +1,15 @@
+{
+    "name": "cube-scene",
+    "version": "1.0.0",
+    "description": "A 3D cube map scene built with Three.js, implementing custom shaders for tonemapping.",
+    "main": "main.js",
+    "scripts": {
+        "start": "http-server -c-1 -H \"Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate\" -H \"Pragma: no-cache\" -H \"Expires: 0\""
+    },
+    "author": "Romain Aznar",
+    "license": "MIT",
+    "dependencies": {
+        "three": "^0.185.0",
+        "http-server": "^14.1.1"
+    }
+}
