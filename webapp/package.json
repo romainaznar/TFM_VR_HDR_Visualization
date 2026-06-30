@@ -9,7 +9,6 @@
     "author": "Romain Aznar",
     "license": "MIT",
     "dependencies": {
-        "three": "^0.185.0",
         "http-server": "^14.1.1"
     }
 }
