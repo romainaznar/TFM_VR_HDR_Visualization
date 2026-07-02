@@ -62,7 +62,7 @@ vec3 HVSToneMapping(vec3 color) {
     color = mix(color, blueShiftedColor, rodContribution);
   }
 
-  float exposure = 1.5 / pow(max(blendedLuminance, 1e-7), 0.6);
+  float exposure = 1.0 / pow(max(blendedLuminance, 1e-7), 0.4);
   exposure = clamp(exposure, 0.05, 1000.0);
 
   float contrastAdjustment =
