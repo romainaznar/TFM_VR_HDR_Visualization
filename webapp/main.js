@@ -60,7 +60,7 @@ function init() {
 	document.body.appendChild(VRButton.createButton(renderer));
 
 	stats = new Stats();
-    document.body.appendChild(stats.dom);
+	document.body.appendChild(stats.dom);
 
 	scene = new THREE.Scene();
 
@@ -263,6 +263,14 @@ function initGUI() {
 	const controller2 = renderer.xr.getController(1);
 	controller2.add(new THREE.Line(geometry));
 	scene.add(controller2);
+
+	controller1.addEventListener('connected', (e) => {
+		console.log('Controller 1 connected', e.data);
+	});
+
+	controller2.addEventListener('connected', (e) => {
+		console.log('Controller 2 connected', e.data);
+	});
 
 	const controllerModelFactory = new XRControllerModelFactory();
 
